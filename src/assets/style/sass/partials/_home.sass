@@ -1,0 +1,57 @@
+#home
+  max-width: 900px
+  margin: auto
+
+.section-title
+  font-size: 1.5em
+  color: $secondaryColor
+  letter-spacing: 1.3px
+
+.grid-wrapper
+  display: grid
+  grid-gap: 30px
+  grid-template-columns: repeat(3, 1fr)
+
+.card
+  background: snow
+  border-radius: 5px
+  box-shadow: 7px 7px 15px rgba(33, 33, 33, 0.7)
+  border: 1px solid $primaryColor
+  transition: all 400ms ease-in-out
+  &:hover
+    transform: translateY(-3px)
+    box-shadow: 12px 14px 15px rgba(33, 33, 33, 0.7)
+
+  .project-img
+    width: 100%
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+  .project-title
+    padding: 15px
+    font-size: 1.25em
+    margin: 0
+    letter-spacing: 1.3px
+    color: $textColorDark
+    text-transform: uppercase
+
+  .project-desc
+    font-size: 1em
+    margin: 0
+    padding: 15px
+    letter-spacing: 1.2px
+
+@media screen and (max-width: 60em)
+  #home
+    max-width: 600px
+
+  .grid-wrapper
+    grid-template-columns: 1fr 1fr !important
+
+@media screen and (max-width: 38em)
+  .section-title
+    padding-left: 15px !important
+
+  .grid-wrapper
+    grid-template-columns: 1fr !important
+    margin: 0 40px

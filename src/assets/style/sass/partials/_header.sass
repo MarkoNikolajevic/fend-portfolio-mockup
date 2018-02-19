@@ -1,0 +1,41 @@
+.main-header
+  background: #eee
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+  .logo
+    margin-right: auto
+    padding-left: 50px
+
+  .personal-info-container
+    color: $textColorDark
+    padding-right: 50px
+    letter-spacing: 1.3px
+
+    .name
+      font-size: 2em
+      margin-bottom: 0
+
+    .role
+      font-size: 1.25em
+      margin: 0
+      padding: 15px 0
+
+.divider
+  width: 100vw
+  height: 80px
+  background: $primaryColor
+
+
+@media screen and (max-width: 38em)
+  .logo,
+  .personal-info-container
+    padding: 15px !important
+
+  .name
+    font-size: 1.25em !important
+
+  .role
+    font-size: 1em !important
